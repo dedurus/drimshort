@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1 class="mb-4">About</h1>
+    <h1 class="mb-4 headingh1">About</h1>
     <g-image class="about-image" src="~/assets/img/dsff.jpg" />
 
     <p>
@@ -30,8 +30,8 @@ export default {
 .about-image {
   display: block;
   margin: auto;
-  width: 90%;
-  max-width: 250px;
+  width: 70%;
+  max-width: 200px;
   padding-bottom: 20px;
 }
 </style>

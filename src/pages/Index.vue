@@ -5,12 +5,13 @@
     <div class="col-md order-md-12 mobile_mar_btm">
       <g-image src="~/assets/img/main_txt.png" class="img-fluid" width="500"/>
       <div class="col text-center">
-        <b-link href="#" class="btn btn-watch btn-lg" role="button">
+        <b-link href="#" class="btn btn-watch btn-lg" role="button" disabled>
             <div class="dsff_btn_wrapper">
                 <div class="watch_now_btn watch_n">Watch Now</div>
                 <div class="watch_now_btn dsff2020">DSFF<br>2020</div>
             </div>
         </b-link>
+        <Counter />
       </div>
     </div>
     <div class="col-md order-md-1">
@@ -23,20 +24,31 @@
 </template>
 
 <script>
+import Counter from '../components/Counter.vue'
+
 export default {
+  components: {
+    Counter
+  },
   metaInfo: {
     title: ' Home',
+
     htmlAttrs: {
       lang: 'en',
     },
     bodyAttrs: {
       class: 'full_bg'
-    }
+    },
   }
 }
 </script>
 
 <style scoped>
+@media only screen and (min-width: 768px) {
+  #app{
+    justify-content: center;
+  }
+}
 @media only screen and (max-width: 425px) {
   .mobile_mar_btm{
     margin-bottom: 50px;

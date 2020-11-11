@@ -13,3 +13,7 @@ a:hover, a:focus{
     padding-left: 0;
     padding-right: 0;
 }
+h1.headingh1{
+    color: #10daf7;
+    font-size: 2rem;
+}

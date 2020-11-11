@@ -33,8 +33,8 @@
       </div>
 
       <div class="col">
-        <div class="footer-copyright text-right">
-          <span id="copyright">{{year}}</span> &copy; DSFF
+        <div class="footer-copyright text-right ">
+          <span style="line-height: 1rem;" id="copyright" class="drim_email">{{year}}</span> <span  style="line-height: 1rem;" class="drim_email"> &copy; DSFF</span>
 
         </div>
       </div>
@@ -47,7 +47,6 @@
 
 <script>
 export default {
-  //el: '#copyright',
   data(){
     return {
       year: new Date().getFullYear()
@@ -59,18 +58,19 @@ export default {
 <style lang="scss">
 footer {
   width: 100%;
+  font-size: 0.8rem;
   /* background-color: rgba(37, 21, 38, 0.6); */
   padding: 1rem 0.5rem;
   position: fixed;
   bottom: 0;
   color: #b275b5;
-  background: -moz-linear-gradient(top,  rgba(43,25,44,0.2) 0%, rgba(43,25,44,1) 50%, rgba(43,25,44,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(43,25,44,0.2) 0%,rgba(43,25,44,1) 50%,rgba(43,25,44,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(43,25,44,0.2) 0%,rgba(43,25,44,1) 50%,rgba(43,25,44,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(top,  rgba(43,25,44,0) 0%, rgba(43,25,44,1) 50%, rgba(43,25,44,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(43,25,44,0) 0%,rgba(43,25,44,1) 50%,rgba(43,25,44,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(43,25,44,0) 0%,rgba(43,25,44,1) 50%,rgba(43,25,44,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#992b192c', endColorstr='#2b192c',GradientType=0 ); /* IE6-9 */
 }
 .footer_icons{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 500;
     line-height: 1;
 }
