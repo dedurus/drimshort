@@ -6,3 +6,5 @@ node_modules
 dist
 .env
 .env.*
+src/assets/KATALOG_DSFF2020.pdf
+static/KATALOG_DSFF2020.pdf

@@ -19,6 +19,7 @@
             <b-tab title="PROGRAM AND TIMETABLE 2020">
                 <div id="program_wrapper">
 
+
                     <h4 class="program_date">
                         DAY ONE / 13.11.20 / FRIDAY
                     </h4>
@@ -34,7 +35,8 @@
                     <ul>
                         <li>"The distance between us and the sky" - Vasilis Kekatos 9' /GRE 2019</li>
                         <li>"Exam"-Sonia K. Hadad 15' /IRL 2019</li>
-                        <li>"The visit" - Djordje Vojvodic 20' /MNE 2020 "Home is where the house is" - Peter Cerovsek 23' /SLO/SER 2019</li>
+                        <li>"The visit" - Djordje Vojvodic 20' /MNE 2020</li>
+                        <li>"Home is where the house is" - Peter Cerovsek 23' /SLO/SER 2019</li>
                     </ul>
 
                     <p class="program_p">
@@ -44,25 +46,27 @@
                     <ul>
                         <li>"I am calling your father" - Leon Ristov 12' /MKD 2020</li>
                         <li>"Labour day waltz"- Zoran Stojkovski 17' /CRO 2019</li>
-                        <li>"Ficus" - Andrej Volkashin 17' /BiH, MKD 2018 "Ashes" - Gjorgji Lazov 18' /MKD 2019</li>
+                        <li>"Ficus" - Andrej Volkashin 17' /BiH, MKD 2018</li>
+                        <li>"Ashes" - Gjorgji Lazov 18' /MKD 2019</li>
                     </ul>
 
                     <p class="program_p">
-                        Student films
+                        Student competition program
                     </p>
 
                     <ul>
                         <li>"Nobody told me I have to love you" - Matjaz Jamnik 18' /SLO 2019</li>
-                        <li>"Development" - Nikola Vucinic 22'/MNE 2020 "Porodicni odmor" - Katarina Koljevic 19' /SER 2020</li>
+                        <li>"Development" - Nikola Vucinic 22' /MNE 2020</li>
+                        <li>"Family vacation" - Katarina Koljevic 19' /SER 2020</li>
                     </ul>
 
                     <p class="program_p">
-                        `Dealing with the past' competition program
+                        `Dealing with the past` competition program
                     </p>
 
                     <ul>
                         <li>"B4" - Alen Simic 13' /BIH 2020</li>
-                        <li>"Foreign body" - Dusan Zoric 21' /SER  2018</li>
+                        <li>"Foreign body" - Dusan Zoric 21' /SER 2018</li>
                         <li>"Mother Mariam" - Mustafa Gurbuz 9' /TUR 2018</li>
                         <li>"Unripe cherries" - Nebojsa Jovanovikj 16' /MKD 2015</li>
                     </ul>
@@ -108,12 +112,9 @@
                     </p>
 
                     <ul>
-                        <li>
-                            "Index 669" - Dejan Djolev 16' /MKD 2018 "Twisted" - Batuhan Ibrahim 18' /MKD 2020
-                        </li>
-                        <li>
-                            "Comma" - Sezer Salihi 10' /MKD 2019
-                        </li>
+                        <li>"Index 669" - Dejan Djolev 16' /MKD 2018</li>
+                        <li>"Twisted" - Batuhan Ibrahim 18' /MKD 2020</li>
+                        <li>"Comma" - Sezer Salihi 10' /MKD 2019</li>
                     </ul>
 
                     <p class="program_p">
@@ -121,7 +122,8 @@
                     </p>
 
                     <ul>
-                        <li>"Summer fruits" - Josip Lukic 20' /CR0 2019 "Winter solstice" - Aleksa Mihajlovic 20' /SER 2020</li>
+                        <li>"Summer fruits" - Josip Lukic 20' /CR0 2019</li>
+                        <li>"Winter solstice" - Aleksa Mihajlovic 20' /SER 2020</li>
                         <li>“Sherbet" - Nikola Stojanovic 19' /SER 2019</li>
                     </ul>
 
@@ -130,7 +132,8 @@
                     </p>
 
                     <ul>
-                        <li>"Letters" - Bojan Radanovic 12' /CRO 2019 "Faceless" - David Lusicic 14' /CRO 2020</li>
+                        <li>"Letters" - Bojan Radanovic 12' /CRO 2019</li>
+                        <li>"Faceless" - David Lusicic 14' /CRO 2020</li>
                         <li>"Stack of material" - Sajra Subasic 7' /BIH 2019</li>
                         <li>"Yet another departure" - Renata Poljak 11' /CRO 2019</li>
                     </ul>
@@ -141,8 +144,9 @@
 
                     <ul>
                         <li>"He loves my eyes" - Enxhi Rista 23' /ROM 2020</li>
-                        <li>“Aygol" - Dimitris Argyriou 8' /RUS/GER 2020 "Sign" - Ugur Sahin 7’ /TUR 2018</li>
-                        <li>“The kestrels" - Szonja Szabo 17’ / HUN 2020</li>
+                        <li>“Aygol" - Dimitris Argyriou 8' /RUS/GER 2020</li>
+                        <li>"Sign" - Ugur Sahin 7’ /TUR 2018</li>
+                        <li>“The kestrels" - Szonja Szabo 17’ /HUN 2020</li>
                         <li>"Edgar" - Matko Abramic & Michael Reed 19' /IRL/CR0 2019</li>
                         <li>"Decision" - Agim Abdula 12' /MKD 2018</li>
                     </ul>
@@ -165,7 +169,7 @@
                         <li>"Nest" - Sonja Rohleder 4' /GER 2019</li>
                         <li>"Sloth" - Julia Ocker 4' /GER 2018</li>
                         <li>"Cat lake city" - Antje Heyn 6' /GER 2019</li>
-                        <li>"Die lupe" - Nazgol Emami 10' /GER 2017</li>
+                        <li>"The magnifying glass" - Nazgol Emami 10' /GER 2017</li>
                         <li>"Voyagers" - Gauthier Ammeux 7' /GER 2017</li>
                         <li>"The Kite" - Martin Smatana 13' /GER 2019</li>
                         <li>"Ties"- Dina Velikovskaya 7' /GER/RUS 2019</li>
@@ -181,7 +185,8 @@
 
                     <ul>
                         <li>"I will end up in jail" - Alexandre Dostie 23' /CAN 2019</li>
-                        <li>"Route 3" - Thanasis Neofostisos 13' /GRE 2019 "Bits" - Aron Horvath 15' / SLO 2020</li>
+                        <li>"Route 3" - Thanasis Neofostisos 13' /GRE 2019</li>
+                        <li>"Bits" - Aron Horvath 15' / SLO 2020</li>
                     </ul>
 
                     <p class="program_p">
@@ -190,7 +195,8 @@
 
                     <ul>
                         <li>"Dream of the blood and soul" - Igor Aleksov 20' /MKD 2018</li>
-                        <li>“Deaflands"- Bruno Veljanovski 6' /MKD 2020 "The new beginning" - Tanja Simonovska 18' /MKD 2019</li>
+                        <li>“Deaflands"- Bruno Veljanovski 6' /MKD 2020</li>
+                        <li>"The new beginning" - Tanja Simonovska 18' /MKD 2019</li>
                         <li>"Farmer's blues" - Iber Dheari 16' /MKD 2020</li>
                     </ul>
 
@@ -203,14 +209,13 @@
                         <li>"10 seconds" - Evgenia Taneva 6' /BGR 2020</li>
                     </ul>
 
-
                     <p class="program_p">
                         `Dealing with the past` competition program
                     </p>
 
                     <ul>
                         <li>"Shok" - Jamie Donoughue 21' /XXK/GBR 2015</li>
-                        <li>"Without Kosovo" Dea Gjinovci 22' /GBR 2017</li>
+                        <li>"Without Kosovo" - Dea Gjinovci 22' /GBR 2017</li>
                         <li>"Faliminderit" - Martin Nicolas Neuhold 13' /LUX 2019</li>
                         <li>"Yugoslavia" - Ademir Gogic 9 /BIH 2015</li>
                     </ul>
@@ -230,7 +235,24 @@
 
 
             <b-tab title="Catalogue">
-                <p>soon..</p>
+                <div class="row justify-content-center">
+                     <div class="col">
+                        <p class="text-right"><a target="_blank" rel="noopener" href="../KATALOG_DSFF2020.pdf">Catalogue PREVIEW</a></p>
+                     </div>
+                     <div class="col">
+                        <p><a href="../KATALOG_DSFF2020.pdf" download>Catalogue DOWNLOAD (PDF)</a></p>
+                     </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div style='padding:100% 0 0 0;position:relative;'>
+
+
+                        <iframe style="width:100%;height:100%; position:absolute;top:0;left:0;" src="https://online.fliphtml5.com/nzffd/vpfk/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe>
+                        </div>
+
+                    </div>
+                </div>
             </b-tab>
         </b-tabs>
     </div>
@@ -294,5 +316,7 @@ export default {
     .program_time{
         color: #b275b5;
         font-size: 1.5rem;
+        margin-bottom: 0;
+        margin-top: 1rem;
     }
 </style>

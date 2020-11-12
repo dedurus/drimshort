@@ -21,6 +21,9 @@
                     <li class="nav-item">
                         <g-link class="nav-link text-center" to="/program2020/">Program 2020</g-link>
                     </li>
+                    <li class="nav-item">
+                        <g-link class="nav-link text-center" to="/sponsors/">Sponsors</g-link>
+                    </li>
 
 
                 </ul>
