@@ -1,6 +1,6 @@
 <template>
     <div class="counter">
-        {{timerCount}}
+        <h4 class="mt-1 text-center">Stream starts in {{timerCount}}</h4>
     </div>
 </template>
 
@@ -18,7 +18,7 @@ export default {
 
             timerCount: {
                 handler(value) {
-                    var cd_date = new Date("Nov 13, 2020 16:59:59").getTime();
+                    var cd_date = new Date("Nov 14, 2020 16:59:59").getTime();
 
                     setTimeout(() => {
                         var now = new Date().getTime();

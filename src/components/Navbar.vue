@@ -24,6 +24,9 @@
                     <li class="nav-item">
                         <g-link class="nav-link text-center" to="/sponsors/">Sponsors</g-link>
                     </li>
+                    <li class="nav-item">
+                        <g-link class="nav-link text-center watch" to="/stream/">Watch Now</g-link>
+                    </li>
 
 
                 </ul>
@@ -90,6 +93,17 @@ export default {
 .navbar-toggler:focus,
 .navbar-toggler:active {
     outline: 0;
+}
+a.nav-link.watch{
+    color: red;
+    font-weight: 800;
+}
+a.nav-link.watch.active{
+    color: #10daf7;
+    font-weight: 800;
+}
+a.nav-link.watch:hover{
+    color: #10daf7;
 }
 
 .navbar-toggler span {

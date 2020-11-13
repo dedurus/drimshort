@@ -21,7 +21,7 @@ export default function (Vue, { router, head, isClient }) {
     head.meta.push({
       key: 'og:description',
       name: 'og:description',
-      content: '2020 Edition of Drim Short Film Festival in Struga',
+      content: '2020 Online Edition of Drim Short Film Festival in Struga',
     })
     head.meta.push({
       key: 'og:image',
@@ -36,7 +36,7 @@ export default function (Vue, { router, head, isClient }) {
     head.meta.push({
       key: 'twitter:description',
       name: 'twitter:description',
-      content: '2020 Edition of Drim Short Film Festival in Struga',
+      content: '2020 Online Edition of Drim Short Film Festival in Struga',
     })
     head.meta.push({
       key: 'twitter:image',
