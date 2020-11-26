@@ -18,7 +18,7 @@ export default {
 
             timerCount: {
                 handler(value) {
-                    var cd_date = new Date("Nov 14, 2020 16:59:59").getTime();
+                    var cd_date = new Date("Nov 15, 2020 11:59:59").getTime();
 
                     setTimeout(() => {
                         var now = new Date().getTime();

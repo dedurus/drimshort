@@ -24,9 +24,9 @@
                     <li class="nav-item">
                         <g-link class="nav-link text-center" to="/sponsors/">Sponsors</g-link>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <g-link class="nav-link text-center watch" to="/stream/">Watch Now</g-link>
-                    </li>
+                    </li> -->
 
 
                 </ul>
