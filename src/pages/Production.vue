@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1 class="mb-4 headingh1">Films</h1>
+    <h1 class="mb-4 headingh1">Production</h1>
 
     <p>Four short documentaries produced by Bager Genesis 2.0 Struga, written, directed and edited by young citizens of Struga, as part of the project "Citizens in our town, main actors or mute extras” supported by Civica Mobilitas.</p>
 
