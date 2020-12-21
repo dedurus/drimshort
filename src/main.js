@@ -12,10 +12,10 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout)
   Vue.mixin(checkIfMobile)
 
-  head.script.push({
+  /* head.script.push({
     src: 'http://www.geoplugin.net/javascript.gp',
     body: true
-  })
+  }) */
 
   router.beforeEach((to, _from, next) => {
     head.meta.push({
