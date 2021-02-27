@@ -11,7 +11,7 @@
             </span>
             <div class="navbar-collapse collapse w-100 justify-content-center" id="navbar">
                 <ul class="navbar-nav mx-auto">
-                     <li class="nav-item">
+                    <li class="nav-item">
                         <g-link class="nav-link text-center" to="/" exact>Home</g-link>
                     </li>
 
@@ -20,6 +20,9 @@
                     </li>
                     <li class="nav-item">
                         <g-link class="nav-link text-center" to="/program2020/">Program 2020</g-link>
+                    </li>
+                    <li class="nav-item">
+                        <g-link class="nav-link text-center" to="/script/">Consulting</g-link>
                     </li>
                     <li class="nav-item">
                         <g-link class="nav-link text-center" to="/production/">Production</g-link>
@@ -64,9 +67,9 @@ export default {
 <style>
 .navbar{
     padding: .1rem 1rem;
-    background: -moz-linear-gradient(top,  rgba(43,25,44,1) 0%, rgba(43,25,44,1) 40%, rgba(43,25,44,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(43,25,44,1) 0%,rgba(43,25,44,1) 40%,rgba(43,25,44,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(43,25,44,1) 0%,rgba(43,25,44,1) 40%,rgba(43,25,44,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(top,  rgba(43,25,44,1) 0%, rgba(43,25,44,1) 70%, rgba(43,25,44,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(43,25,44,1) 0%,rgba(43,25,44,1) 70%,rgba(43,25,44,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(43,25,44,1) 0%,rgba(43,25,44,1) 70%,rgba(43,25,44,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b192c', endColorstr='#002b192c',GradientType=0 ); /* IE6-9 */
 }
 
@@ -78,7 +81,9 @@ export default {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b192c', endColorstr='#002b192c',GradientType=0 );
 }
 
-
+.navbar-expand-sm .navbar-nav .nav-link {
+    white-space: nowrap;
+}
 
 @media (max-width: 480px){
 
