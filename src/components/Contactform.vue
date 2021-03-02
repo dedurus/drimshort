@@ -15,9 +15,8 @@
       <b-alert
       :show="form_state.error"
       variant="dark"
-
     >
-        An error occured. Please try again.
+        An error occured. Please try again. <span v-if="form_state.error_code">(Err. code: {{form_state.error_code}})</span>
     </b-alert>
 
         <b-form @submit.prevent="handleSubmit(onSubmit)" @reset="resetForm">
@@ -33,7 +32,7 @@
                     v-model="form.name"
                     placeholder="Let us know your name."
                   />
-                  <input type="hidden" value="" name="gender">
+
 
                   <BTextInputWithValidation
                     rules="required|email"
@@ -44,9 +43,10 @@
                     placeholder="Your email address"
                   />
 
-                  <BSelectWithValidation rules="required" label="Platform:" placeholder="Select a subject" v-model="form.platform">
-                    <option value="script">Script Corner</option>
-                    <option value="rought_cut">Rought Cut Corner</option>
+                  <BSelectWithValidation label="Platform:" :options="platform_options" rules="required" v-model="form.platform">
+
+                    <!-- <option value="script">Script Corner</option>
+                    <option value="rought_cut">Rought Cut Corner</option> -->
                   </BSelectWithValidation>
 
             </div>
@@ -109,12 +109,16 @@ export default {
       name: "",
       message: "",
       platform: "",
-      gender: ""
     },
+    platform_options: [
+          { value: 'script', text: 'Script Corner' },
+          { value: 'rought_cut', text: 'Rought Cut Corner' }
+        ],
     form_state: {
       success: false,
       error: false,
       loading: false,
+      error_code: ''
     },
     alerts: {
       dismissSecs: 10,
@@ -140,30 +144,42 @@ export default {
           this.form_state.loading = true;
           this.form_state.success = false;
           this.form_state.error = false;
+          this.form_state.error_code = '';
 
           let vm = this
           console.log('vm: ', vm);
           console.log('vm - parent: ', vm.$parent);
 
           axios
-             .post(
-                 "http://drimshortfestival.mk/m.php",
-                 this.form,
-                 {
+              .post(
+                  "http://drimshortfestival.mk/m.php",
+                  this.form,
+                  {
                   'Content-Type': 'application/json',
-                 }
-             )
-             .then(res => {
-               console.log('res: ', res);
-                 this.form_state.success = true;
-                 this.form_state.error = false;
+                  }
+              )
+              .then(res => {
+                console.log('res: ', res);
+                    console.log('res.data[0].status: ', res.data[0].status);
+                  if(res.data[0].status){
+                    this.form_state.success = true;
+                    this.form_state.error = false;
+                  }else{
+                    console.log('s-error 1');
+                    this.form_state.error_code = 1
+                    this.form_state.success = false;
+                    this.form_state.error = true;
+                  }
+
 
                   /* self,showAlert()
                   self.resetForm() */
-             })
-             .catch((error) => {
-               //this,showAlert()
+              })
+              .catch((error) => {
+                //this,showAlert()
+                console.log('s-error 2');
                   console.log('error: ', error);
+                  this.form_state.error_code = error
                   this.form_state.error = true;
                   console.log(this.form_state.error)
 
@@ -176,10 +192,10 @@ export default {
       this.name = "";
       this.platform = "";
       this.message = "";
-      this.gender = "";
       //this.form_state.success = false;
       //this.form_state.error = false;
       this.form_state.loading = false;
+      this.form_state.error_code = ''
       console.log('Resetting');
       requestAnimationFrame(() => {
         this.$refs.observer.reset();
