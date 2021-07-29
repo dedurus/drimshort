@@ -1,13 +1,13 @@
 body{
-  background-color: #2b192c;
+  background-color: #6A00F4;
   color: #fff;
 }
 a{
-    color: #b275b5;
+    color: #2EFFE3;
 }
 a.active,
 a:hover, a:focus{
-    color: #10daf7;
+    color: #AEFF00;
 }
 .container-fluid{
     padding-left: 0;

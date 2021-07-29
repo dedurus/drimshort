@@ -1,31 +1,58 @@
 <template>
-  <Layout>
+  <Naslovna>
 
-  <div class="row">
-    <div class="col-md order-md-12 mobile_mar_btm">
-      <g-image src="~/assets/img/main_txt.png" class="img-fluid" width="500"/>
-      <div class="col text-center">
-       <!--  <b-link href="/stream" class="btn btn-watch btn-lg" role="button">
-            <div class="dsff_btn_wrapper">
-                <div class="watch_now_btn watch_n">Watch Now</div>
-                <div class="watch_now_btn dsff2020">DSFF<br>2020</div>
-            </div>
-        </b-link> -->
-      </div>
-    </div>
-    <div class="col-md order-md-1">
-      <g-image src="~/assets/img/foot_art.png" class="img-fluid" width="500"/>
-    </div>
+  <div class="align-items-center main_scroll">
+
+
+
+
+
+
+
+
+<div class="js-ticker">
+  <ul class="wrapper">
+    <li>&middot; DREAM SHORT AT DRIM SHORT FILM FESTIVAL</li>
+    <li>&middot; 29.07 - 01.08.2021 </li>
+    <li>&middot; STRUGA, SEE YOU! </li>
+  </ul>
+</div>
+
+<!-- <div class="js-ticker">
+  <ul class="wrapper">
+    <li>No. 1 \ First point</li>
+    <li>No. 2 \ Second point</li>
+    <li>No. 3 \ Third point</li>
+  </ul>
+</div>
+ -->
+
+
+
+         <!--  DREAM SHORT AT DRIM SHORT FILM FESTIVAL / 29.07-01.08 2021 / STRUGA, SEE YOU! -->
+
+
+
+
+
 
   </div>
 
-  </Layout>
+  </Naslovna>
 </template>
 
 <script>
+//import MarqueeText from 'vue-marquee-text-component'
+import { gsap } from "gsap";
+import Naslovna from '~/layouts/Naslovna.vue'
+
+
+
+
 
 export default {
   components: {
+    Naslovna
   },
   metaInfo: {
     title: ' Home',
@@ -36,49 +63,114 @@ export default {
     bodyAttrs: {
       class: 'full_bg'
     },
+  },
+  mounted:function() {
+    //this.$nextTick(function () {
+    this.clone_ticker()
+    //}
+  },
+  methods: {
+      clone_ticker: function(){
+        document.querySelectorAll('.js-ticker .wrapper').forEach(ticker => {
+
+          let clone_el = ticker.querySelectorAll("li");
+
+
+          clone_el.forEach(function (el, index) {
+
+            let clone = el.cloneNode(true);
+
+
+
+                ticker.append(clone);
+            })
+          })
+
+          this.start_anim()
+      },
+      start_anim: function(){
+        const dur = 50;
+        const wrap = gsap.utils.wrap(0, 1);
+        let wrapper = document.querySelector('.js-ticker .wrapper');
+
+        let ticker = wrapper.querySelectorAll("li")
+        let totalDistance;
+        //const items = ticker.querySelectorAll("li");
+        let anim;
+
+        let startPos;
+
+        if (anim) {
+          anim.play(0)
+        };
+        //totalDistance = $(ticker).width() / 2;
+        totalDistance = wrapper.offsetWidth / 2
+
+
+        anim = gsap.to(wrapper, {
+            duration: dur,
+            x: -totalDistance,
+            ease: "none",
+            repeat: -1,
+            overwrite: true
+        });
+
+      }
   }
 }
 </script>
 
 <style scoped>
+
+.main_scroll{
+  font-size: 15rem;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+
+}
+
+
 @media only screen and (min-width: 768px) {
   #app{
     justify-content: center;
   }
 }
-@media only screen and (max-width: 425px) {
-  .mobile_mar_btm{
-    margin-bottom: 50px;
-  }
-}
-.btn-watch{
-  color: #fff;
-  background-color: #692848;
-}
-.btn-watch:hover,
-.btn-watch:active{
-  background-color: #521e38;
-}
-.dsff_btn_wrapper {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+
+
+
+body {
+  background: black;
+  overflow-x: hidden;
 }
 
-.watch_now_btn {
-  display: flex;
-  align-items: center;
+.js-ticker {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display:flex;
+  align-items:center;
 }
-.watch_n{
-  border-right: 2px solid #ad6e8d;
-  padding-right: 10px;
+
+.js-ticker .wrapper {
+  position: absolute;
+  white-space: nowrap;
+  padding: 0;
+  will-change: transform;
 }
-.dsff2020{
-  font-size: 14px;
-  line-height: 1;
-  padding-left: 10px;
+
+.js-ticker li {
+  list-style: none;
+  padding: 0;
+  font-family: sans-serif;
+  color: white;
+  font-weight: 300;
+  font-size: 15vw;
+  display: inline-block;
+  margin-right: 30px;
 }
-.brown_text{
-  color: #fff;
+ul.wrapper li{
+  padding-left: 1%;
+  color: #2EFFE3;
 }
 </style>

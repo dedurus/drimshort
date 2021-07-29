@@ -19,7 +19,7 @@
                         <g-link class="nav-link text-center" to="/about/">About</g-link>
                     </li>
                     <li class="nav-item">
-                        <g-link class="nav-link text-center" to="/program2020/">Program 2020</g-link>
+                        <g-link class="nav-link text-center" to="/program2021/">Program 2021</g-link>
                     </li>
                     <li class="nav-item">
                         <g-link class="nav-link text-center" to="/script/">Consulting</g-link>
@@ -67,18 +67,18 @@ export default {
 <style>
 .navbar{
     padding: .1rem 1rem;
-    background: -moz-linear-gradient(top,  rgba(43,25,44,1) 0%, rgba(43,25,44,1) 70%, rgba(43,25,44,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(43,25,44,1) 0%,rgba(43,25,44,1) 70%,rgba(43,25,44,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(43,25,44,1) 0%,rgba(43,25,44,1) 70%,rgba(43,25,44,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b192c', endColorstr='#002b192c',GradientType=0 ); /* IE6-9 */
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background-color: rgba(106, 0, 244, 0.15);
+    /* background-color: rgba(255, 255, 255, 0.15); */
 }
 
 .navbar.nav_opened{
-    background-color: rgba(43,25,44,1);
+   /*  background-color: rgba(43,25,44,1);
      background: -moz-linear-gradient(top,  rgba(43,25,44,1) 0%, rgba(43,25,44,1) 90%, rgba(43,25,44,0) 100%);
     background: -webkit-linear-gradient(top,  rgba(43,25,44,1) 0%,rgba(43,25,44,1) 90%,rgba(43,25,44,0) 100%);
     background: linear-gradient(to bottom,  rgba(43,25,44,1) 0%,rgba(43,25,44,1) 90%,rgba(43,25,44,0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b192c', endColorstr='#002b192c',GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b192c', endColorstr='#002b192c',GradientType=0 ); */
 }
 
 .navbar-expand-sm .navbar-nav .nav-link {

@@ -2,7 +2,7 @@
   <div class="layout">
       <Navbar/>
       <transition name="fade" appear>
-      <div class="container hide_x_overflow">
+      <div class="container-fluid">
         <slot/>
       </div>
       </transition>

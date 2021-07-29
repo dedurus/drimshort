@@ -63,11 +63,10 @@ footer.page-footer {
   padding: 1.2rem 0.5rem 0.5rem 0.5rem;
   position: fixed;
   bottom: 0;
-  color: #b275b5;
-  background: -moz-linear-gradient(top,  rgba(43,25,44,0) 0%, rgba(43,25,44,1) 50%, rgba(43,25,44,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(43,25,44,0) 0%,rgba(43,25,44,1) 50%,rgba(43,25,44,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(43,25,44,0) 0%,rgba(43,25,44,1) 50%,rgba(43,25,44,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#992b192c', endColorstr='#2b192c',GradientType=0 ); /* IE6-9 */
+  color: #2EFFE3;
+ backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background-color: rgba(106, 0, 244, 0.15);
 }
 .footer_icons{
     font-size: 1.2rem;
@@ -75,7 +74,7 @@ footer.page-footer {
     line-height: 1;
 }
 .footer_icons a:hover{
-  color: #10daf7;
+  color: #AEFF00;
 }
 .footer_icons svg.feather-facebook{
   margin-right: 10px;

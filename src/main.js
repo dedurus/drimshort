@@ -21,12 +21,12 @@ export default function (Vue, { router, head, isClient }) {
     head.meta.push({
       key: 'og:title',
       name: 'og:title',
-      content: 'Drim Short Film Festival - 2020',
+      content: 'Drim Short Film Festival - 2021',
     })
     head.meta.push({
       key: 'og:description',
       name: 'og:description',
-      content: '2020 Online Edition of Drim Short Film Festival in Struga',
+      content: '2021 Edition of Drim Short Film Festival in Struga',
     })
     head.meta.push({
       key: 'og:image',
@@ -36,12 +36,12 @@ export default function (Vue, { router, head, isClient }) {
     head.meta.push({
       key: 'twitter:title',
       name: 'twitter:title',
-      content: 'Drim Short Film Festival - 2020',
+      content: 'Drim Short Film Festival - 2021',
     })
     head.meta.push({
       key: 'twitter:description',
       name: 'twitter:description',
-      content: '2020 Online Edition of Drim Short Film Festival in Struga',
+      content: '2021 Edition of Drim Short Film Festival in Struga',
     })
     head.meta.push({
       key: 'twitter:image',
