@@ -15,7 +15,7 @@
     "bootstrap-vue": "^2.15.0",
     "gridsome": "^0.7.20",
     "gsap": "^3.7.1",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.14.0",
     "sass-loader": "^7.0.0",
     "vee-validate": "^3.4.5"
   }
