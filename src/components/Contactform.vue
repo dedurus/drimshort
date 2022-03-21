@@ -152,7 +152,7 @@ export default {
 
           axios
               .post(
-                  "http://drimshortfestival.mk/m.php",
+                  "https://drimshortfestival.mk/m.php",
                   this.form,
                   {
                   'Content-Type': 'application/json',

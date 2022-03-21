@@ -31,7 +31,7 @@
         $message_body .= $message_post . "\r\n";
 
 
-        $transport = Swift_Transport::newInstance();
+        $transport = Swift_MailTransport::newInstance();
 
         // Create the Mailer using your created Transport
         $mailer = Swift_Mailer::newInstance($transport);
