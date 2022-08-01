@@ -1,9 +1,9 @@
 {
-  "name": "gridsome_boots",
+  "name": "2022",
   "private": true,
   "scripts": {
     "build": "gridsome build",
-    "dev": "gridsome develop",
+    "develop": "gridsome develop",
     "explore": "gridsome explore"
   },
   "dependencies": {
@@ -13,10 +13,13 @@
     "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.15.0",
-    "gridsome": "^0.7.20",
-    "gsap": "^3.7.1",
-    "node-sass": "^4.14.0",
-    "sass-loader": "^7.0.0",
-    "vee-validate": "^3.4.5"
+    "gridsome": "^0.7.0",
+    "gsap": "^3.10.4",
+    "vee-validate": "^3.4.5",
+    "vue-pdf": "^4.3.0"
+  },
+  "devDependencies": {
+    "sass": "^1.53.0",
+    "sass-loader": "^10.1.1"
   }
 }

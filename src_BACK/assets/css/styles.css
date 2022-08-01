@@ -1,0 +1,19 @@
+body{
+  background-color: #6A00F4;
+  color: #fff;
+}
+a{
+    color: #2EFFE3;
+}
+a.active,
+a:hover, a:focus{
+    color: #AEFF00;
+}
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+h1.headingh1{
+    color: #10daf7;
+    font-size: 2rem;
+}

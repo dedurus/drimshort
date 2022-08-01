@@ -1,22 +1,16 @@
 <template>
   <header class="header">
     <b-navbar class="" toggleable="md" type="light">
-        <b-navbar-brand>
-        <g-link class="logo-home logo-desktop" to="/"><Logo /></g-link>
-        <g-link class="logo-home logo–mobile" to="/"><Logo /></g-link>
+      <b-navbar-brand>
+        <g-link class="logo-home logo-desktop" to="/">
+          <Logo />
+        </g-link>
+        <g-link class="logo-home logo–mobile" to="/">
+          <Logo />
+        </g-link>
       </b-navbar-brand>
 
-        <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-      <!--
-
-      <button type="button" aria-label="Toggle navigation" class="navbar-toggler collapsed" aria-expanded="false" aria-controls="nav_collapse"><span class="navbar-toggler-icon"></span></button>
-       -->
-
-      <!-- <button class="navbar-toggler mr-2 collapsed" type="button"   aria-expanded="false" aria-controls="nav_collapse" data-target="#nav_collapse">
-                 <span> </span>
-                <span> </span>
-                <span> </span>
-            </button> -->
+      <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
       <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav class="ml-auto justify-content-center">

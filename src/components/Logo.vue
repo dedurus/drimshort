@@ -1,8 +1,8 @@
 <template>
-    <div id="Logo">
-      <span id="dsff_logo">DSFF</span>
-      <span id="logo_2021">2021</span>
-  </div>
+  <span id="Logo">
+    <span id="dsff_logo">DSFF</span>
+    <span id="logo_2021">2022</span>
+  </span>
 
 </template>
 
@@ -13,15 +13,16 @@ export default {
 </script>
 
 <style scoped>
-  #dsff_logo{
-    display: block;
-    line-height: 1;
-    font-weight: bold;
-  }
-  #logo_2021{
-    display: block;
-    color:#10daf7;
-    line-height: 1;
-    font-weight: bold;
-  }
+#dsff_logo {
+  display: block;
+  line-height: 1;
+  font-weight: bold;
+}
+
+#logo_2021 {
+  display: block;
+
+  line-height: 1;
+  font-weight: bold;
+}
 </style>

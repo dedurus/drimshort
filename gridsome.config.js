@@ -4,6 +4,14 @@ module.exports = {
   siteUrl: 'http://drimshortfestival.mk',
   //pathPrefix: '/site',
   icon: './src/favicon.jpg',
+  configureWebpack: {
+    // merged with the internal config
+    optimization: {
+      splitChunks: {
+        automaticNameDelimiter: '_'
+      }
+    },
+  },
   plugins: [
     // {
     //   use: '@gridsome/source-filesystem',
