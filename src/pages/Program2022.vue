@@ -236,7 +236,39 @@
 
                 </b-tab>
 
-                <b-tab title="Catalog"></b-tab>
+                <b-tab title="Catalog" lazy>
+                    <div class="row justify-content-center">
+                        <!-- <div class="col">
+                            <p class="text-right"><a target="_blank" rel="noopener"
+                                    href="../DSFF_2022_Catalogue_compressed.pdf">Catalogue PREVIEW</a></p>
+                        </div> -->
+                        <!-- <div class="col"> -->
+                        <p class="mt-1 mb-3 h6"><a href="../DSFF_2022_Catalogue_compressed.pdf" download>DOWNLOAD
+                                Catalog (PDF, 17MB)</a></p>
+                        <!-- </div> -->
+                    </div>
+
+                    <div class="row justify-content-center">
+
+
+                        <div class="col">
+                            <!-- <div style="height: 80vh;">
+                                <vue-pdf-app pdf="https://drimshortfestival.mk/DSFF_2022_Catalogue_compressed.pdf"
+                                    :config="config">
+                                </vue-pdf-app>
+                            </div> -->
+                            <div style='padding:100% 0 0 0;position:relative;'>
+
+
+
+                                <iframe style="width:100%;height:100%; position:absolute;top:0;left:0;"
+                                    src="https://online.fliphtml5.com/nzffd/smfa/" seamless="seamless" scrolling="no"
+                                    frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+                            </div>
+
+                        </div>
+                    </div>
+                </b-tab>
 
                 <b-tab title="Sponsors">
                     <div class="text-center">
@@ -312,11 +344,39 @@
 </template>
 
 <script>
-import DefaultLayout from '~/layouts/DefaultLayout.vue'
+import DefaultLayout from '~/layouts/DefaultLayout.vue';
+/* import "vue-pdf-app/dist/icons/main.css"; */
 export default {
     components: {
-        DefaultLayout
+        DefaultLayout,
+        //"vue-pdf-app": VuePdfApp
+        /* "vue-pdf-app": () => ({
+            component: new Promise((res) => {
+                return setTimeout(
+                    () => res(import("vue-pdf-app")),
+                    4000
+                );
+            }),
+        }) */
     },
+    /* data() {
+        return {
+            // disable "Previous page" button
+            config: {
+                sidebar: false,
+                    secondaryToolbar: false,
+                toolbar: {
+                    toolbarViewerRight: {
+                        presentationMode: false,
+                        openFile: false,
+                        print: false,
+                        download: false,
+                        viewBookmark: false,
+                    },
+                }
+            }
+        }
+    }, */
     metaInfo: {
         title: 'DSFF 2022',
         htmlAttrs: {
@@ -334,15 +394,16 @@ export default {
 
 
 
+
+
+
+
+
 .tower {
     font-family: 'Square Peg', cursive;
     font-size: 3rem;
     padding-left: 0;
 }
-
-
-
-
 
 div[role="tabpanel"] img {
     padding: 0.1rem;
@@ -451,5 +512,9 @@ h5:before {
 h6 {
     margin-top: 1.5rem;
     font-size: 0.9rem;
+}
+
+.pdf-app.light {
+    --pdf-loading-bar-color: white !important;
 }
 </style>

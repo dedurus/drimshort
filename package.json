@@ -16,7 +16,7 @@
     "gridsome": "^0.7.0",
     "gsap": "^3.10.4",
     "vee-validate": "^3.4.5",
-    "vue-pdf": "^4.3.0"
+    "vue-pdf-app": "^2.1.0"
   },
   "devDependencies": {
     "sass": "^1.53.0",
